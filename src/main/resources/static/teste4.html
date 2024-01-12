@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+<style type="text/css">
+
+.topic-avatar {
+  border-top: 1px solid var(--primary-low);
+  padding-top: 15px;
+  width: 45px;
+  float: left;
+  z-index: 2;
+  height: 100%;
+}
+.post-avatar, .topic-avatar, .user-card-avatar {
+  position: relative;
+}
+</style>
+
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+  
+  
+<div class="topic-avatar" style="margin-bottom: 164px;">
+	<div class="post-avatar">
+		<a class="trigger-user-card main-avatar " href="/u/lenny_h"
+			data-user-card="lenny_h" aria-hidden="true" tabindex="-1"> <img
+			alt="" src="/user_avatar/forum.camunda.io/lenny_h/90/7678_2.png"
+			loading="lazy" tabindex="-1" class="avatar" width="45" height="45">
+		</a>
+	</div>
+</div>
+<div class="topic-body clearfix">
+	<div role="heading" aria-level="2" class="topic-meta-data">
+		<div class="names trigger-user-card">
+			<span class="first username"><a href="/u/lenny_h"
+				data-user-card="lenny_h" class="">lenny_h</a></span>
+		</div>
+		<div class="post-infos">
+			<div class="post-info post-date">
+				<a class="widget-link post-date"
+					href="/t/configuring-with-springboot-and-postgres/15859"
+					title="Post date"><span title="Oct 28, 2019 12:36 am"
+					data-time="1572223018906" data-format="tiny" class="relative-date">Oct
+						'19</span></a>
+			</div>
+			<div class="read-state read" title="Post is unread">
+				<svg class="fa d-icon d-icon-circle svg-icon svg-node"
+					aria-hidden="true">
+					<use xlink:href="#circle"></use></svg>
+			</div>
+		</div>
+	</div>
+	<div class="regular contents">
+		<div class="cooked">
+			<p>I am getting this error:</p>
+			<pre>
+				<code>org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver 
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+</code>
+			</pre>
+			
+</div>
+
+</div>
+
+</div>
+</body>
+
+</html>			
+			

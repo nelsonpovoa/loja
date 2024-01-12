@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Entrada </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style type="text/css">
+
+	
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/2419.jpg);
+    background-size: cover;
+    font-family: arial;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+   
+  .loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 550px;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+  }
+  
+    .loginBox2 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 120px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    color: white;
+  }
+  
+  .user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+    border: 3px dotted #d2dfe7;
+    background: #fff;
+  }
+   
+  h2 {
+    margin: 0;
+    padding: 0 0 26px;
+    color: #d2dfe7;
+    text-align: center;
+    text-transform: uppercase;
+  }
+   
+   
+  .loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+   
+   .loginBox2 input {
+    width: 100%;
+/*     margin-bottom: 10px; */
+  }
+  
+  .loginBox input[type="text"],
+  .loginBox input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+    .loginBox select {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+   
+  ::placeholder
+  {
+    color: rgba(255, 255, 255, 0.5);
+  }
+   
+  .loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #eee;
+    font-size: 16px;
+    background-color: #FF8C00;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 12px 0 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+    .loginBox input[class="publico"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #eee;
+    font-size: 16px;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 20px;
+/*     margin: 0px 0 18px; */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+   
+  .loginBox input[type="submit"]:hover {
+    background-color: #ff9719;
+    color: #fff;
+  }
+   
+  .loginBox input[class="publico"]:hover {
+    background-color: rgb(0, 217, 0);
+    color: #fff;
+  }
+  
+  .loginBox a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  
+  
+</style>
+
+
+<script type="text/javascript">
+
+	function acessoPublico(){
+		location.href="/roupa/0/0";
+	}
+	
+	function login(){
+		var selMenu = document.getElementById("selMenu");
+		location.href="/login";
+	}
+	
+	function validaCampos(){
+		var username = document.getElementById("username");
+		if (username.value.length == 0) {
+			alert("deve introduzir o seu Username");
+			return false;
+		}
+		
+		return true;
+	}
+</script>
+
+</head>
+<body>
+ <div class="loginBox">
+  <img class="user" src="img/user.png">
+  <h2>Entrada </h2>
+  <form onsubmit="return validaCampos()" action="/login">
+    <input id="username" type="text" name="username" placeholder="Username" required>
+    <input id="pass" type="password" name="password" placeholder="Password" required>
+    
+    <select id="selMenu" name="selMenu">
+    	<option value="1">Menu Vertical</option>
+    	<option value="2">Menu Horizontal</option>
+    </select>
+    <br><br>
+    <input type="submit" name="sign-in" value="Entrar">
+    <a href="#">Recuperar Password</a>
+    <br><br><br>
+    <input class="publico" type="submit" name="publico" value="Acesso Publico" onclick="acessoPublico()">
+  </form>
+</div>
+
+</body>
+</html> 

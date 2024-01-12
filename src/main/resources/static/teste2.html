@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Example Code -->
+    
+    <div class="container">
+    
+    <button class="btn btn-primary" type="button" disabled="" id="submitButton" onclick="submitForm()">
+      <span class="spinner-border spinner-border-sm " role="status" aria-hidden="true"></span>
+      <span class="visually-hidden">Loading...</span>
+    </button>
+    <button class="btn btn-primary" type="button" disabled="">
+      <span class="spinner-border spinner-border-sm " role="status" aria-hidden="true"></span>
+      Loading...
+    </button>
+    
+    </div>
+    
+    <!-- End Example Code -->
+  
+      <script>
+      //alert(11)
+    function submitForm() {
+      var submitButton = document.getElementById("submitButton");
+alert(submitButton)
+      // Show the spinner
+      submitButton.querySelector(".spinner-border").classList.remove("d-none");
+
+      // Disable the button to prevent further clicks
+      submitButton.disabled = true;
+
+      // Simulate an asynchronous action (e.g., form submission)
+      setTimeout(function() {
+        // Hide the spinner
+        submitButton.querySelector(".spinner-border").classList.add("d-none");
+
+        // Enable the button after the action is completed
+        submitButton.disabled = false;
+      }, 2000); // Simulating a 2-second delay, replace with your actual action
+    }
+  </script>
+    
+    
+  </body>
+</html>

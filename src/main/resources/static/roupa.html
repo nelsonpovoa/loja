@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Roupas</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <!-- meta charset="UTF-8">
+    <title>Title</title -->
+
+    <style>
+
+        .table-layout{
+            /*background-image: "img/loja.jpg"; */
+            background-image: url("img/loja.jpg");
+            background-color: #cccccc;
+            height: 500px;
+            background-size: cover;
+        }
+
+        .div-logo {
+            position: absolute;
+            background-image: url("img/loja-logo.jpg");
+            background-size: 50%;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            background-image: url("img/loja.jpg");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            border-bottom: 10px solid red;
+        }
+
+        .hero-text {
+           /* text-align: right; */
+            position: absolute;
+            top: 18%;
+            left: 85%;
+            transform: translate(-65%, -50%); 
+            color: red;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 840px;
+        }
+
+        .hero-image-logo {
+            background-image: url("img/loja-logo2.png");
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            /*background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+            border: 10px solid red;
+        }
+    </style>
+
+<script src="/webjars/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</head>
+<body>
+
+<section>
+    <div class="hero-image">
+        <div class="hero-image-logo">
+            
+        </div>
+        <div class="hero-text">
+            <h3>
+                <a href="#"> Recentes </a> |
+                <a href="#"> Homem </a>  |
+                <a href="#"> Senhora </a> |
+                <a href="#"> Criança </a> |
+                <a href="#"> Têxteis lar </a> |
+                <a href="#"> Contactos </a>
+            </h3>
+
+        </div>
+    </div>
+
+	<div style="text-align: right;padding-top: 20px;padding-right: 20px;font-size: 30px">
+		<button onclick="criaAnuncio()" class="btn btn-primary" style="border-radius: 10px"> &nbsp;&nbsp; Novo Anúncio &nbsp;&nbsp; </button>
+	</div>
+
+    <div style="text-align: center; ">
+        <h1 style="font-size: 35pt;font-weight: bold;"> Criança - Menina </h1>
+        <br>
+        <table width="100%" style="font-size: 9pt;padding: 40px">
+            <tr>
+                <td width="50%"> <img src="/img/anuncios/menina_m1.jpg" style="border-radius:10px" width="80%"> </td>
+                <td style="background-color: #f5efe0">
+                    ❌❌ ÚLTIMOS TAMANHOS APROVEITEM 😍
+
+                    💥GRANDE MODA E QUALIDADE EXCELENTE
+
+                    👉Marinho 10 10 anos 🇵🇹
+
+                    **Grande moda deste ano **
+                    **Calças curtas e largas **
+
+                    ❤️🖤T shirt mais curta e larga
+                    Pormenor de folho na manga
+                    100% algodão
+                    Aplicação estampada c/ brilhos
+
+                    ❤️🖤 calça larga
+                    100% algodão
+                    Pormenor de elástico largo e alto
+                    Pormenor c/ botões
+
+                </td>
+            </tr>
+            <tr>
+                <td width="50%"> <img src="/img/anuncios/menina_m3.jpg" width="80%"> </td>
+                <td style="background-color: #f5efe0">
+                    💥GRANDE MODA E QUALIDADE EXCELENTE
+
+                    👉6 8 10 10 12 12 14 anos 🇵🇹
+
+                    🌈T -shit modelo oversized
+                    Em algodão
+                    Aplicação dtf Minnie/Mickey
+                    Cor : branca
+
+                    🌈Calção em algodão c/ elasticidade
+                    Cor : rosa
+
+                </td>
+            </tr>
+
+            <tr>
+                <td width="50%"> <img src="/img/anuncios/menina_m4.jpg" width="80%"> </td>
+                <td style="background-color: #f5efe0">
+                    👉3 6 6 8 10 12 anos QUALIDADE TOP 🇵🇹
+
+                    🪷T .shirt malha 90/10 algodão
+                    c/licra pormenor na manga contraste da saia
+                    Aplicação bordada coração flores
+
+                    🪷saia com folhos malha lourex brilhos em riscas várias cores
+                    Pormenor de laço
+
+                    🪷Muito confortável
+                    🪷Tecido da saia com brilhos de cores
+
+                </td>
+            </tr>
+
+            <tr>
+                <td width="50%"> <img src="/img/anuncios/menina_m5.jpg" width="80%"> </td>
+                <td style="background-color: #f5efe0">
+                    👉3 6 6 8 10 12 anos QUALIDADE TOP 🇵🇹
+
+                    🪷T .shirt malha 90/10 algodão
+                    c/licra pormenor na manga contraste da saia
+                    Aplicação bordada coração flores
+
+                    🪷saia com folhos malha lourex brilhos em riscas várias cores
+                    Pormenor de laço
+
+                    🪷Muito confortável
+                    🪷Tecido da saia com brilhos de cores
+
+                </td>
+            </tr>
+
+            <tr>
+                <td width="50%"> <img src="/img/anuncios/menina_m6.jpg" width="80%"> </td>
+                <td style="background-color: #f5efe0">
+                    👉3 6 6 8 10 12 anos QUALIDADE TOP 🇵🇹
+
+                    🪷T .shirt malha 90/10 algodão
+                    c/licra pormenor na manga contraste da saia
+                    Aplicação bordada coração flores
+
+                    🪷saia com folhos malha lourex brilhos em riscas várias cores
+                    Pormenor de laço
+
+                    🪷Muito confortável
+                    🪷Tecido da saia com brilhos de cores
+
+                </td>
+            </tr>
+
+            <tr>
+                <td width="50%"> <img src="/img/anuncios/menina_m7.jpg" width="80%"> </td>
+                <td style="background-color: #f5efe0">
+                    👉3 6 6 8 10 12 anos QUALIDADE TOP 🇵🇹
+
+                    🪷T .shirt malha 90/10 algodão
+                    c/licra pormenor na manga contraste da saia
+                    Aplicação bordada coração flores
+
+                    🪷saia com folhos malha lourex brilhos em riscas várias cores
+                    Pormenor de laço
+
+                    🪷Muito confortável
+                    🪷Tecido da saia com brilhos de cores
+
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+<div id="dialog">
+
+</div>
+
+</section>
+
+<script>
+
+function loadDialog(url, width) {
+	//pagina = page;
+	//alert(pagina)
+	//console.log("dialog1: "+dialog1+"|");
+	dialog1 = $( "#dialog" ).dialog({ 
+    	modal: true,
+    	resizable:false,
+    	width: width,
+    	 buttons: [
+		    {
+		      text: "Fechar",
+		      click: function() {
+		    	  dialog1.dialog( "close" );
+		    	  
+		    	  //removeDialog();
+		    	 /*if (pagina == 'listInvites'){
+		    		 go(5);
+		    	 }*/
+		    	 //go(5);
+		        //$( this ).dialog( "close" );
+		      }
+		    }
+		  ],
+		  close: function() { removeDialog(); }
+	}).load(url).dialog('open'); 
+	
+}
+
+function criaAnuncio(){
+
+	/*
+	dialog1 = $( "#dialog" ).dialog({ 
+    	modal: true,
+    	resizable:false,
+    	width: 600,
+    	 buttons: [
+		    {
+		      text: "Fechar",
+		      click: function() {
+		    	  dialog1.dialog( "close" );
+		        //$( this ).dialog( "close" );
+		      }
+		    }
+		  ]
+	}).load('/mycard-api/createcard').dialog('open'); 
+	*/
+	
+	
+	loadDialog('/teste2/createAd.jsp', 600)
+	//dialog1.load('/mycard-api/createcard').dialog('open');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+
+    <title>3D Sidebar navigation menus on hover effect</title>
+
+<style type="text/css">
+
+	
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 14px;
+}
+ul.menu{
+    display: inline-block;
+    list-style: none;
+}
+li.menu_list{
+    height: 85px;
+    width: 85px;
+    position: relative;
+}
+li.menu_list .front,a.side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 86px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top:0;
+    left: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+li.menu_list .front{
+    background: #34465d;
+    color: #fffc00;
+    transform-origin: 0 0;
+    font-size: 30px;
+}
+a.side{
+    background: #fffc00;
+    color: #34465d;
+    transform-origin: 0 0 85px;
+    transform: rotateY(-90deg);
+}
+li.menu_list:hover a.side{
+    transform: rotateY(0deg);
+}
+li.menu_list:hover .front{
+    transform: rotateY(90deg);
+}
+
+</style>
+
+</head>
+<body>
+<ul class="menu">
+    <li class="menu_list">
+        <span class="front fas fa-home"></span>
+        <a href="#" class="side">home</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-newspaper"></span>
+        <a href="#" class="side">news</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-blog"></span>
+        <a href="#" class="side">blog</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-info"></span>
+        <a href="#" class="side">about</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-briefcase"></span>
+        <a href="#" class="side">projects</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-address-book"></span>
+        <a href="#" class="side">contact</a>
+    </li>
+    <li class="menu_list">
+        <span class="front fas fa-user"></span>
+        <a href="#" class="side">Login</a>
+    </li>
+</ul>
+</body>
+</html>
